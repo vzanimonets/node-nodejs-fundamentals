@@ -8,7 +8,6 @@ const dynamic = async () => {
     }
 
     try {
-      // Динамический импорт из поддиректории plugins/
       const plugin = await import(`./plugins/${pluginName}.js`);
 
       if (typeof plugin.run !== "function") {

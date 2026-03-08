@@ -52,7 +52,6 @@ const kWayMerge = (arrays) => {
       let index = 0;
       const length = heap.length;
 
-      // Heapify down
       while (true) {
         const left = index * 2 + 1;
         const right = index * 2 + 2;
